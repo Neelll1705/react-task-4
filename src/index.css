@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+table {
+  margin: 5rem auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 80rem;
+  background-color: #3498DB; /* Cool background color - Belize Hole */
+  color: #ECF0F1; /* Light text color - Clouds */
+  border: 2px solid #2980B9; /* Slightly lighter border color - Belize Hole with a shade */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+th {
+  background-color: #2980B9; /* Slightly lighter header background - Belize Hole with a shade */
+  color: #ECF0F1;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+td {
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #3498DB; /* Darker even row background - Belize Hole */
+}
+
+tr:nth-child(odd) {
+  background-color: #2980B9; /* Slightly lighter odd row background - Belize Hole with a shade */
+}
+
+.fixed-heading {
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2980B9; /* Header background color for contrast - Belize Hole with a shade */
+  color: #ECF0F1;
+  padding: 10px;
+  font-size: 36px;
+  z-index: 1;
+  border-radius: 5px;
+  animation: fade 1s ease-in-out;
+}
+
+table:hover {
+  background-color: #3498DB; /* Slightly darker background color on hover - Belize Hole */
+  transition: background-color 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
